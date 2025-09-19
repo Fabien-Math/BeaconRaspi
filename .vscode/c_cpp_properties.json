@@ -1,0 +1,21 @@
+{
+	"configurations": [
+	  {
+		"name": "Linux",  // Or "Win32" / "Mac" depending on your system
+		"includePath": [
+		  "/home/fabien/raspi/include/hardware",
+		  "/home/fabien/raspi/include/path_planner",
+		  "/home/fabien/raspi/include/ov2slam",
+		  "/usr/local/include",          // Custom installs
+		  "/usr/include"
+		],
+		"defines": [],
+		"compilerPath": "/usr/bin/g++", // Adjust to your system
+		"cStandard": "c11",
+		"cppStandard": "c++17",
+		"intelliSenseMode": "linux-gcc-x64" // Adjust for your OS/compiler
+	  }
+	],
+	"version": 4
+  }
+  

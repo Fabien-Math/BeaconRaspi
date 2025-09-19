@@ -1,0 +1,24 @@
+services:
+  rpi-zero2-container:
+    build:
+      context: .
+      dockerfile: Dockerfile.raspi_zero2
+    image: devcontainer-rpi-zero2-container
+    container_name: rpi-zero2-container
+    volumes:
+      - ..:/home/user/workspace:cached
+    environment:
+      - DISPLAY=${DISPLAY}
+      - DBUS_SESSION_BUS_ADDRESS=${DBUS_SESSION_BUS_ADDRESS}
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          # memory: 512M
+    devices:
+      - /dev/video0:/dev/video0
+      - /dev/video1:/dev/video1
+    network_mode: host
+    privileged: true
+    command: ["/bin/bash", "-c", "source ~/.bashrc && tail -f /dev/null"]

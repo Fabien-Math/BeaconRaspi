@@ -1,0 +1,35 @@
+%YAML 1.0
+---
+
+#--------------------------------------------------------------------------------------------
+# Hardware Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+imu_frequency: 0
+camera_frame_rate: 0
+
+# Module 1
+m1_i2c_address: 11  # 0x0B
+
+# Module 2
+m2_i2c_address: 12  # 0x0C
+
+# Module 3
+m3_i2c_address: 13  # 0x0D
+
+# Module 4
+m4_i2c_address: 14  # 0x0E
+
+# Module 5
+m5_i2c_address: 15  # 0x0F
+
+# Module 6
+m6_i2c_address: 16  # 0x10
+
+# Module 7
+m7_i2c_address: 17  # 0x11
+
+# Module 8
+m8_i2c_address: 18  # 0x12
+
+# Module 9
+m9_i2c_address: 19  # 0x13
