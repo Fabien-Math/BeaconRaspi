@@ -1,4 +1,4 @@
-Include modified version of (OV2SLAM code)[https://github.com/ov2slam/ov2slam]
+Include modified version of [OV2SLAM code](https://github.com/ov2slam/ov2slam)
 
 # OV²SLAM
 ## A Fully Online and Versatile Visual SLAM for Real-Time Applications
